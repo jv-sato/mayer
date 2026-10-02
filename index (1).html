@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth overflow-x-hidden">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <!-- SEO Meta Tags -->
+  <title>Advocacia Mayer | Dra. Ana Regina Mayer - Advogada Criminal e Família</title>
+  <meta name="description" content="Advocacia Mayer: Mais de 30 anos de atuação em Direito Criminal e de Família. Defesa técnica, humanizada e sigilosa no Tribunal do Júri, divórcios e custódia. Agende uma consulta.">
+  <meta name="keywords" content="Advocacia Mayer, Dra. Ana Regina Mayer, Advogada Criminalista, Direito de Família, Tribunal do Júri, Divórcio, Guarda, Habeas Corpus, Consulta Jurídica">
+  <meta name="author" content="Advocacia Mayer">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Advocacia Mayer | Soluções Jurídicas em Direito Criminal e de Família">
+  <meta property="og:description" content="Defesa técnica e humanizada com 30 anos de experiência. Atendimento confidencial e especializado.">
+  <meta property="og:image" content="assets/ana.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Advocacia Mayer",
+    "image": "assets/ana.webp",
+    "telephone": "+553184775353",
+    "email": "anacriminalista@outlook.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR"
+    },
+    "priceRange": "$$$",
+    "employee": {
+      "@type": "Person",
+      "name": "Dra. Ana Regina Mayer",
+      "jobTitle": "Advogada"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            gold: {
+              300: '#F3E5AB',
+              400: '#E5C158',
+              500: '#D4AF37',
+              600: '#AA820A',
+            },
+            deep: {
+              900: '#070a12',
+              800: '#0b1120',
+              700: '#11182c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- External Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#060911] text-slate-200 font-sans selection:bg-gold-500/30 selection:text-gold-300 relative overflow-x-hidden w-full max-w-full min-h-screen">
+
+  <!-- Ambient Glowing Orbs behind glass layers (Wrapped inside fixed overflow container to eliminate mobile side scroll) -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    <div class="ambient-orb w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-blue-600/30 top-[-100px] left-[-150px]"></div>
+    <div class="ambient-orb w-[350px] sm:w-[650px] h-[350px] sm:h-[650px] bg-amber-500/15 top-[30%] right-[-180px]"></div>
+    <div class="ambient-orb w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-indigo-600/25 top-[65%] left-[-200px]"></div>
+    <div class="ambient-orb w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-gold-500/15 bottom-0 right-10"></div>
+  </div>
+
+  <!-- Header / Minimalist Sticky Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      <!-- Logo / Title -->
+      <a href="#hero" class="flex items-center gap-2.5 sm:gap-3 group max-w-[70%] sm:max-w-none">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl glass-pill flex-shrink-0 flex items-center justify-center text-gold-400 font-serif font-bold text-lg sm:text-xl border border-gold-500/30 shadow-inner group-hover:scale-105 transition-transform overflow-hidden">
+          <img src="assets/logo.png" alt="Logo de Dra. Ana Regina Mayer - Advogada Criminal e de Família" class="w-full h-full object-cover"/>
+        </div>
+        <div class="truncate">
+          <span class="font-serif text-base sm:text-lg tracking-widest text-white font-bold block uppercase leading-tight truncate">Advocacia Mayer</span>
+          <span class="text-[9px] sm:text-[10px] tracking-wider text-gold-400/90 font-medium uppercase block truncate">Direito Criminal, Família & Civil</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-medium text-slate-300">
+        <a href="#hero" class="hover:text-gold-400 transition-colors">Início</a>
+        <a href="#sobre" class="hover:text-gold-400 transition-colors">Sobre Mim</a>
+        <a href="#habilidades" class="hover:text-gold-400 transition-colors">Competências</a>
+        <a href="#projetos" class="hover:text-gold-400 transition-colors">Casos & Atuação</a>
+        <a href="#experiencia" class="hover:text-gold-400 transition-colors">Trajetória</a>
+        <a href="#depoimentos" class="hover:text-gold-400 transition-colors">Depoimentos</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-3">
+        <a href="#contato" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase text-slate-950 bg-gradient-to-r from-gold-400 to-amber-300 hover:from-amber-300 hover:to-gold-400 shadow-lg shadow-gold-500/20 hover:shadow-gold-500/30 transition-all hover:-translate-y-0.5">
+          <span>Consulta Jurídica</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" aria-label="Abrir Menu" class="md:hidden text-slate-300 hover:text-white p-2 glass-pill rounded-lg">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden md:hidden glass-card mx-4 my-2 p-5 sm:p-6 rounded-2xl border border-white/10 space-y-3 sm:space-y-4">
+      <a href="#hero" class="block text-slate-300 hover:text-gold-400 font-medium py-1" onclick="toggleMenu()">Início</a>
+      <a href="#sobre" class="block text-slate-300 hover:text-gold-400 font-medium py-1" onclick="toggleMenu()">Sobre Mim</a>
+      <a href="#habilidades" class="block text-slate-300 hover:text-gold-400 font-medium py-1" onclick="toggleMenu()">Competências</a>
+      <a href="#projetos" class="block text-slate-300 hover:text-gold-400 font-medium py-1" onclick="toggleMenu()">Casos & Atuação</a>
+      <a href="#experiencia" class="block text-slate-300 hover:text-gold-400 font-medium py-1" onclick="toggleMenu()">Trajetória</a>
+      <a href="#depoimentos" class="block text-slate-300 hover:text-gold-400 font-medium py-1" onclick="toggleMenu()">Depoimentos</a>
+      <a href="#contato" class="block text-gold-400 font-semibold pt-2 border-t border-white/10" onclick="toggleMenu()">Falar com a Advogada</a>
+    </div>
+  </header>
+
+  <!-- Main Content Flow -->
+  <main class="relative z-10 pt-24 sm:pt-28 pb-16 w-full max-w-full overflow-x-hidden">
+
+    <!-- 1. Hero Section -->
+    <section id="hero" class="min-h-[85vh] flex items-center justify-center px-3 sm:px-6 py-8 sm:py-16 w-full">
+      <div class="max-w-5xl mx-auto w-full">
+        <div class="glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-10 md:p-14 text-center relative overflow-hidden border border-white/15">
+          <!-- Decorative Top Badge -->
+          <div class="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full glass-pill text-[10px] sm:text-xs font-semibold tracking-widest text-gold-300 uppercase mb-6 sm:mb-8 shadow-sm max-w-full">
+            <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse flex-shrink-0"></span>
+            <span class="truncate">Tradição &bull; Firmeza &bull; Sensibilidade</span>
+          </div>
+
+          <h1 class="font-serif text-2xl sm:text-5xl lg:text-6xl font-bold text-white tracking-wide leading-tight mb-4 sm:mb-6">
+            Advocacia <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-400 to-amber-200 glow-gold">Mayer</span>
+          </h1>
+
+          <!-- Copywriting Otimizado para Alta Conversão e Autoridade -->
+          <p class="text-sm sm:text-xl lg:text-2xl text-slate-300 font-light max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-10">
+            &ldquo;Há 30 anos protegendo seus direitos com firmeza técnica e resguardando a estabilidade e o patrimônio da sua família.&rdquo;
+          </p>
+
+          <!-- CTAs Otimizados -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 w-full">
+            <a href="#contato" class="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-slate-950 font-bold text-xs sm:text-sm tracking-wider uppercase bg-gradient-to-r from-gold-400 to-amber-400 hover:from-gold-300 hover:to-amber-300 shadow-xl shadow-gold-500/25 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 text-center">
+              <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+              <span>Agendar Consulta Confidencial via WhatsApp</span>
+            </a>
+            <a href="#sobre" class="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-white font-medium text-xs sm:text-sm tracking-wider uppercase glass-pill hover:bg-white/10 transition-all border border-white/20 flex items-center justify-center gap-2 text-center">
+              <span>Conhecer Perfil</span>
+              <svg class="w-4 h-4 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+          </div>
+
+          <!-- Highlight Key Metrics -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-8 sm:mt-14 pt-6 sm:pt-10 border-t border-white/10">
+            <div class="text-center p-2 sm:p-3">
+              <span class="block font-serif text-xl sm:text-3xl font-bold text-gold-400">30+</span>
+              <span class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider mt-1 block leading-tight">Anos de Atuação</span>
+            </div>
+            <div class="text-center p-2 sm:p-3">
+              <span class="block font-serif text-xl sm:text-3xl font-bold text-white">1.800+</span>
+              <span class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider mt-1 block leading-tight">Causas Conduzidas</span>
+            </div>
+            <div class="text-center p-2 sm:p-3">
+              <span class="block font-serif text-xl sm:text-3xl font-bold text-gold-400">100%</span>
+              <span class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider mt-1 block leading-tight">Sigilo & Deontologia</span>
+            </div>
+            <div class="text-center p-2 sm:p-3">
+              <span class="block font-serif text-lg sm:text-3xl font-bold text-white truncate">Tribunal</span>
+              <span class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider mt-1 block leading-tight">Vasta Experiência no Júri</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Sobre Mim Section -->
+    <section id="sobre" class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20 w-full">
+      <div class="text-center mb-10 sm:mb-14">
+        <span class="text-gold-400 text-xs tracking-widest uppercase font-semibold">Apresentação</span>
+        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-white mt-2">Sobre a Advogada</h2>
+        <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto mt-4"></div>
+      </div>
+
+      <div class="glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-10 md:p-12 border border-white/10 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-center">
+        <div class="md:col-span-5 flex justify-center w-full">
+          <div class="relative group w-full max-w-[260px] sm:max-w-xs">
+            <div class="absolute -inset-1 rounded-2xl bg-gradient-to-br from-gold-400/40 to-blue-600/30 blur-md group-hover:opacity-100 transition duration-500"></div>
+            <div class="relative w-full h-72 sm:h-96 rounded-2xl overflow-hidden border border-white/20 glass-card">
+              <img 
+                src="assets/ana.webp" 
+                alt="Dra. Ana Regina Mayer - Advogada Especialista em Direito Criminal e de Família" 
+                class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-deep-900/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 p-2.5 sm:p-3 glass-card rounded-xl text-center">
+                <p class="font-serif font-bold text-white text-xs sm:text-sm">Dra. Ana Regina Mayer</p>
+                <p class="text-[10px] sm:text-[11px] text-gold-300 font-medium">Inscrição na OAB | 30 Anos de Advocacia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-7 space-y-4 sm:space-y-6">
+          <div class="inline-flex items-center gap-2 text-[11px] sm:text-xs font-semibold tracking-wider text-gold-400 uppercase">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+            Defesa Técnica com Humanidade e Sigilo
+          </div>
+
+          <h3 class="font-serif text-xl sm:text-3xl text-white font-bold leading-snug">
+            Três décadas dedicadas a proteger seus direitos e restaurar o equilíbrio familiar.
+          </h3>
+
+          <div class="space-y-3 sm:space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed bg-white/[0.02] p-4 sm:p-6 rounded-2xl border border-white/5">
+            <p>
+              Com três décadas de prática jurídica ininterrupta, dedico minha carreira à defesa intransigente da dignidade humana, atuando com coragem nos momentos mais delicados da esfera penal e nos conflitos mais sensíveis do Direito de Família.
+            </p>
+            <p>
+              Acredito que o verdadeiro exercício da advocacia une conhecimento dogmático profundo, combatividade processual em tribunais e uma escuta empática que acolhe a angústia de cada constituinte.
+            </p>
+            <p>
+              Meu compromisso é oferecer soluções estratégicas, éticas e personalizadas para que cada cliente encontre clareza, segurança jurídica e justiça em sua causa.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 pt-2">
+            <div class="p-3.5 sm:p-4 rounded-xl glass-card border border-white/5 flex items-start gap-3">
+              <div class="p-2 sm:p-2.5 rounded-lg bg-gold-500/10 text-gold-400 flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-white text-xs sm:text-sm">Direito Penal Estratégico</h4>
+                <p class="text-[11px] sm:text-xs text-slate-400 mt-0.5">Defesa em inquéritos, audiências e Júri Popular.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 sm:p-4 rounded-xl glass-card border border-white/5 flex items-start gap-3">
+              <div class="p-2 sm:p-2.5 rounded-lg bg-gold-500/10 text-gold-400 flex-shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-white text-xs sm:text-sm">Família & Sucessões</h4>
+                <p class="text-[11px] sm:text-xs text-slate-400 mt-0.5">Mediação humanizada, divórcios e partilhas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Habilidades / Ferramentas Section -->
+    <section id="habilidades" class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20 w-full">
+      <div class="text-center mb-10 sm:mb-14">
+        <span class="text-gold-400 text-xs tracking-widest uppercase font-semibold">Diferenciais Técnicos</span>
+        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-white mt-2">Habilidades & Especialidades</h2>
+        <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+        <div class="glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 border border-white/10 space-y-5 sm:space-y-6">
+          <div class="flex items-center justify-between pb-3 border-b border-white/10">
+            <h3 class="font-serif text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+              <svg class="w-5 h-5 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+              Domínio Processual & Prática
+            </h3>
+            <span class="text-xs text-gold-300 font-medium">30 anos de prática</span>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs sm:text-sm mb-1.5">
+              <span class="text-slate-200 font-medium">Tribunal do Júri e Defesa Criminal Plenária</span>
+              <span class="text-gold-400 font-bold">100%</span>
+            </div>
+            <div class="h-2 sm:h-2.5 w-full bg-slate-800/80 rounded-full overflow-hidden p-0.5 border border-white/10">
+              <div class="h-full bg-gradient-to-r from-gold-500 to-amber-300 rounded-full" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs sm:text-sm mb-1.5">
+              <span class="text-slate-200 font-medium">Mediação de Conflitos Familiares & Guarda</span>
+              <span class="text-gold-400 font-bold">100%</span>
+            </div>
+            <div class="h-2 sm:h-2.5 w-full bg-slate-800/80 rounded-full overflow-hidden p-0.5 border border-white/10">
+              <div class="h-full bg-gradient-to-r from-gold-500 to-amber-300 rounded-full" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs sm:text-sm mb-1.5">
+              <span class="text-slate-200 font-medium">Recursos em Tribunais Superiores (STJ e STF)</span>
+              <span class="text-gold-400 font-bold">100%</span>
+            </div>
+            <div class="h-2 sm:h-2.5 w-full bg-slate-800/80 rounded-full overflow-hidden p-0.5 border border-white/10">
+              <div class="h-full bg-gradient-to-r from-gold-500 to-amber-300 rounded-full" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs sm:text-sm mb-1.5">
+              <span class="text-slate-200 font-medium">Planejamento Sucessório & Inventários</span>
+              <span class="text-gold-400 font-bold">100%</span>
+            </div>
+            <div class="h-2 sm:h-2.5 w-full bg-slate-800/80 rounded-full overflow-hidden p-0.5 border border-white/10">
+              <div class="h-full bg-gradient-to-r from-gold-500 to-amber-300 rounded-full" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 border border-white/10 flex flex-col justify-between">
+          <div>
+            <h3 class="font-serif text-lg sm:text-xl font-bold text-white flex items-center gap-2 pb-3 border-b border-white/10">
+              <svg class="w-5 h-5 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+              Práticas, Ferramentas & Competências
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 mt-4 leading-relaxed">
+              Aliamos a oratória clássica e o rigor técnico à moderna tecnologia jurídica (Processo Judicial Eletrônico e auditoria probatória digital).
+            </p>
+
+            <div class="flex flex-wrap gap-2 sm:gap-2.5 mt-5 sm:mt-6">
+              <span class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full text-xs font-medium glass-pill text-slate-200 border border-white/10">Sustentação Oral</span>
+              <span class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full text-xs font-medium glass-pill text-gold-300 border border-gold-400/30">Habeas Corpus de Urgência</span>
+              <span class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full text-xs font-medium glass-pill text-slate-200 border border-white/10">Divórcio Litigioso e Consensual</span>
+              <span class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full text-xs font-medium glass-pill text-slate-200 border border-white/10">Guarda Compartilhada & Alimentos</span>
+              <span class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full text-xs font-medium glass-pill text-gold-300 border border-gold-400/30">Audiências de Custódia 24h</span>
+              <span class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full text-xs font-medium glass-pill text-slate-200 border border-white/10">Perícia Documentoscópica</span>
+              <span class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full text-xs font-medium glass-pill text-slate-200 border border-white/10">PJE / Eproc / Projudi</span>
+              <span class="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full text-xs font-medium glass-pill text-slate-200 border border-white/10">Compliance Familiar</span>
+            </div>
+          </div>
+
+          <div class="mt-6 sm:mt-8 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-gold-500/10 border border-gold-400/20 flex items-center gap-3">
+            <span class="text-xl sm:text-2xl flex-shrink-0">🏛️</span>
+            <div class="text-[11px] sm:text-xs text-slate-300">
+              <strong class="text-gold-300 block">Atuação Nacional</strong>
+              Patrocínio de causas em todo o Brasil através dos sistemas eletrônicos dos Tribunais Superiores.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Projetos / Trabalhos Section -->
+    <section id="projetos" class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20 w-full">
+      <div class="text-center mb-10 sm:mb-14">
+        <span class="text-gold-400 text-xs tracking-widest uppercase font-semibold">Portfólio de Atuação</span>
+        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-white mt-2">Casos & Áreas de Foco</h2>
+        <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto mt-4"></div>
+        <p class="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto mt-3">
+          Preservando o sigilo profissional estabelecido pelo Código de Ética da OAB, conheça exemplos das áreas de intervenção jurídica da Advocacia Mayer.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between group hover:border-gold-400/40 transition-all duration-300">
+          <div>
+            <div class="h-40 sm:h-44 bg-gradient-to-br from-slate-900 via-deep-800 to-indigo-950 p-5 sm:p-6 flex flex-col justify-between relative overflow-hidden border-b border-white/10">
+              <div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-gold-500/10 blur-xl"></div>
+              <div class="flex justify-between items-start z-10">
+                <span class="px-2.5 py-1 rounded-md text-[10px] font-semibold tracking-wider uppercase glass-pill text-gold-300">Penal Estratégico</span>
+                <span class="text-2xl">⚖️</span>
+              </div>
+              <div class="z-10">
+                <span class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-widest font-mono">Caso Emblemático</span>
+                <h4 class="font-serif text-base sm:text-lg text-white font-bold">Defesa em Plenário do Júri</h4>
+              </div>
+            </div>
+            <div class="p-5 sm:p-6">
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Absolvição pautada em sustentação técnica e rigorosa análise probatória pericial, desconstituindo acusações infundadas perante o conselho de sentença.
+              </p>
+            </div>
+          </div>
+          <div class="p-5 sm:p-6 pt-0">
+            <a href="#contato" class="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-400 group-hover:text-amber-300 transition-colors">
+              <span>Solicitar análise de caso</span>
+              <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between group hover:border-gold-400/40 transition-all duration-300">
+          <div>
+            <div class="h-40 sm:h-44 bg-gradient-to-br from-slate-900 via-deep-800 to-blue-950 p-5 sm:p-6 flex flex-col justify-between relative overflow-hidden border-b border-white/10">
+              <div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-blue-500/15 blur-xl"></div>
+              <div class="flex justify-between items-start z-10">
+                <span class="px-2.5 py-1 rounded-md text-[10px] font-semibold tracking-wider uppercase glass-pill text-blue-300">Família</span>
+                <span class="text-2xl">🕊️</span>
+              </div>
+              <div class="z-10">
+                <span class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-widest font-mono">Mediação Extrajudicial</span>
+                <h4 class="font-serif text-base sm:text-lg text-white font-bold">Divórcio & Partilha Patrimonial</h4>
+              </div>
+            </div>
+            <div class="p-5 sm:p-6">
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Resolução consensual de partilhas complexas com ativos empresariais e preservação do convívio fraterno e dos interesses de menores.
+              </p>
+            </div>
+          </div>
+          <div class="p-5 sm:p-6 pt-0">
+            <a href="#contato" class="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-400 group-hover:text-amber-300 transition-colors">
+              <span>Solicitar análise de caso</span>
+              <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between group hover:border-gold-400/40 transition-all duration-300">
+          <div>
+            <div class="h-40 sm:h-44 bg-gradient-to-br from-slate-900 via-deep-800 to-amber-950 p-5 sm:p-6 flex flex-col justify-between relative overflow-hidden border-b border-white/10">
+              <div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-gold-500/15 blur-xl"></div>
+              <div class="flex justify-between items-start z-10">
+                <span class="px-2.5 py-1 rounded-md text-[10px] font-semibold tracking-wider uppercase glass-pill text-gold-300">Tribunais Superiores</span>
+                <span class="text-2xl">📜</span>
+              </div>
+              <div class="z-10">
+                <span class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-widest font-mono">Instância Recursal</span>
+                <h4 class="font-serif text-base sm:text-lg text-white font-bold">Habeas Corpus & Recursos STJ</h4>
+              </div>
+            </div>
+            <div class="p-5 sm:p-6">
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Concessão de ordens liberatórias e trancamento de ações penais temerárias através de teses constitucionais e memoriais dirigidos aos Ministros.
+              </p>
+            </div>
+          </div>
+          <div class="p-5 sm:p-6 pt-0">
+            <a href="#contato" class="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-400 group-hover:text-amber-300 transition-colors">
+              <span>Solicitar análise de caso</span>
+              <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Experiência Section -->
+    <section id="experiencia" class="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-20 w-full">
+      <div class="text-center mb-10 sm:mb-14">
+        <span class="text-gold-400 text-xs tracking-widest uppercase font-semibold">Carreira Sólida</span>
+        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-white mt-2">Trajetória Profissional</h2>
+        <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto mt-4"></div>
+        <p class="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto mt-3">
+          Três décadas de evolução jurídica contínua e compromisso com o Estado Democrático de Direito.
+        </p>
+      </div>
+
+      <div class="relative border-l border-gold-400/30 ml-2 sm:ml-32 space-y-8 sm:space-y-10">
+        <div class="relative pl-6 sm:pl-8 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-gold-400 border-4 border-deep-900 group-hover:scale-125 transition-transform"></div>
+          
+          <div class="glass-card rounded-2xl p-5 sm:p-8 border border-white/10 hover:border-gold-400/30 transition-all">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <h3 class="font-serif text-lg sm:text-xl font-bold text-white">Sócia Fundadora & Titular</h3>
+              <span class="px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-semibold glass-pill text-gold-300">1994 – Presente (30 Anos)</span>
+            </div>
+            <p class="text-gold-400 text-xs sm:text-sm font-medium mb-2 sm:mb-3">Advocacia Mayer | Escritório Próprio</p>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Fundação e liderança técnica do escritório com foco exclusivo em contencioso e consultoria criminal e de família. Atendimento a mais de 1.800 clientes, mediações familiares complexas e defesas orais prestigiadas perante o Tribunal do Júri e Tribunais de Justiça estaduais e federais.
+            </p>
+          </div>
+        </div>
+
+        <div class="relative pl-6 sm:pl-8 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-gold-400/70 border-4 border-deep-900 group-hover:scale-125 transition-transform"></div>
+          
+          <div class="glass-card rounded-2xl p-5 sm:p-8 border border-white/10 hover:border-gold-400/30 transition-all">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <h3 class="font-serif text-lg sm:text-xl font-bold text-white">Membro Consultor em Comissões da OAB</h3>
+              <span class="px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-semibold glass-pill text-slate-300">2008 – 2020</span>
+            </div>
+            <p class="text-gold-400 text-xs sm:text-sm font-medium mb-2 sm:mb-3">Ordem dos Advogados do Brasil</p>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Participação ativa em comissões temáticas de Direitos Humanos, Prerrogativas dos Advogados e Direito de Família, fomentando debates sobre garantias constitucionais e aperfeiçoamento da mediação familiar.
+            </p>
+          </div>
+        </div>
+
+        <div class="relative pl-6 sm:pl-8 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-gold-400/50 border-4 border-deep-900 group-hover:scale-125 transition-transform"></div>
+          
+          <div class="glass-card rounded-2xl p-5 sm:p-8 border border-white/10 hover:border-gold-400/30 transition-all">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <h3 class="font-serif text-lg sm:text-xl font-bold text-white">Especialização e Formação Continuada</h3>
+              <span class="px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-semibold glass-pill text-slate-300">Pós-Graduações</span>
+            </div>
+            <p class="text-gold-400 text-xs sm:text-sm font-medium mb-2 sm:mb-3">Faculdades de Direito de Excelência</p>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Pós-graduação lato sensu em Direito Penal e Criminologia e extensão universitária em Mediação Sistêmica de Conflitos Familiares, mantendo constante atualização de precedentes e jurisprudência.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. Depoimentos Section -->
+    <section id="depoimentos" class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20 w-full">
+      <div class="text-center mb-10 sm:mb-14">
+        <span class="text-gold-400 text-xs tracking-widest uppercase font-semibold">Reconhecimento & Confiança</span>
+        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-white mt-2">Depoimentos de Clientes & Colegas</h2>
+        <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="glass-card rounded-2xl p-5 sm:p-7 border border-white/10 flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
+          <div>
+            <div class="text-gold-400 text-2xl sm:text-3xl font-serif mb-3 sm:mb-4 leading-none">&ldquo;</div>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed italic mb-5 sm:mb-6">
+              Em um dos momentos mais difíceis da vida do meu filho, a atuação rápida e impecável da Dra. Mayer em sede de custódia e habeas corpus restaurou a nossa paz. Uma profissional de firmeza inquestionável.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10 flex items-center gap-3">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full glass-pill flex items-center justify-center font-bold text-gold-400 text-xs sm:text-sm flex-shrink-0">
+              M.R.
+            </div>
+            <div>
+              <p class="text-white text-xs font-semibold">M. R. Silveira</p>
+              <p class="text-[10px] sm:text-[11px] text-slate-400">Cliente &bull; Causa Penal</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5 sm:p-7 border border-white/10 flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
+          <div>
+            <div class="text-gold-400 text-2xl sm:text-3xl font-serif mb-3 sm:mb-4 leading-none">&ldquo;</div>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed italic mb-5 sm:mb-6">
+              O processo de divórcio e guarda parecia insolúvel até a intermediação sensível e firme da Dra. Mayer. Ela soube proteger as crianças sem acirrar desavenças. Serei eternamente grata.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10 flex items-center gap-3">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full glass-pill flex items-center justify-center font-bold text-gold-400 text-xs sm:text-sm flex-shrink-0">
+              C.A.
+            </div>
+            <div>
+              <p class="text-white text-xs font-semibold">C. Andrade</p>
+              <p class="text-[10px] sm:text-[11px] text-slate-400">Cliente &bull; Direito de Família</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5 sm:p-7 border border-white/10 flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
+          <div>
+            <div class="text-gold-400 text-2xl sm:text-3xl font-serif mb-3 sm:mb-4 leading-none">&ldquo;</div>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed italic mb-5 sm:mb-6">
+              Acompanho a trajetória da Dra. Mayer há décadas nos tribunais. Sua sustentação oral e domínio técnico no Júri são referências de elegância e preparo dogmático para qualquer operador do Direito.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10 flex items-center gap-3">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full glass-pill flex items-center justify-center font-bold text-gold-400 text-xs sm:text-sm flex-shrink-0">
+              Dr. F
+            </div>
+            <div>
+              <p class="text-white text-xs font-semibold">Dr. Fernando G.</p>
+              <p class="text-[10px] sm:text-[11px] text-slate-400">Colega Advogado &bull; OAB/SP</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. Contato Section -->
+    <section id="contato" class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20 w-full">
+      <div class="text-center mb-10 sm:mb-14">
+        <span class="text-gold-400 text-xs tracking-widest uppercase font-semibold">Canais Oficiais</span>
+        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-white mt-2">Fale com a Advocacia Mayer</h2>
+        <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto mt-4"></div>
+        <p class="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto mt-3">
+          Atendimento reservado e individualizado com o sigilo que sua causa exige.
+        </p>
+      </div>
+
+      <div class="glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-10 md:p-12 border border-white/15 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
+        
+        <div class="lg:col-span-5 space-y-6 flex flex-col justify-between">
+          <div>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-white mb-2">Consulta Personalizada</h3>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6 sm:mb-8">
+              Entre em contato para avaliar a viabilidade do seu caso ou agendar uma reunião presencial ou telepresencial.
+            </p>
+
+            <div class="space-y-3 sm:space-y-4">
+              <a href="mailto:anacriminalista@outlook.com" class="flex items-center gap-3.5 p-3 sm:p-3.5 rounded-xl glass-card border border-white/5 hover:border-gold-400/40 transition-colors group">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-400 group-hover:scale-110 transition-transform flex-shrink-0">
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div class="truncate">
+                  <span class="text-[10px] sm:text-[11px] text-slate-400 uppercase tracking-wider block">E-mail Direto</span>
+                  <span class="text-white text-xs sm:text-sm font-medium truncate block">anacriminalista@outlook.com</span>
+                </div>
+              </a>
+
+              <a href="https://wa.me/553184775353" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3.5 p-3 sm:p-3.5 rounded-xl glass-card border border-white/5 hover:border-gold-400/40 transition-colors group">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform flex-shrink-0">
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.529 1.956.81 2.8.81 3.181 0 5.767-2.587 5.767-5.766.001-3.182-2.585-5.796-5.771-5.796zm0 10.364c-.754 0-1.637-.22-2.316-.623l-.165-.098-1.58.415.422-1.541-.108-.172c-.443-.706-.708-1.528-.707-2.579.001-2.535 2.062-4.597 4.599-4.597 2.457 0 4.598 2.061 4.598 4.597 0 2.536-2.062 4.598-4.621 4.598z"/></svg>
+                </div>
+                <div>
+                  <span class="text-[10px] sm:text-[11px] text-slate-400 uppercase tracking-wider block">Plantão / WhatsApp</span>
+                  <span class="text-white text-xs sm:text-sm font-medium">(31) 8477-5353</span>
+                </div>
+              </a>
+
+              <div class="flex items-center gap-3.5 p-3 sm:p-3.5 rounded-xl glass-card border border-white/5">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-400 flex-shrink-0">
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <span class="text-[10px] sm:text-[11px] text-slate-400 uppercase tracking-wider block">Escritório Central</span>
+                  <span class="text-white text-xs sm:text-sm font-medium">Atendimento Presencial com Agendamento Prévio</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <span class="text-xs text-slate-400 uppercase tracking-wider block mb-3 font-semibold">Redes & Conexões</span>
+            <div class="flex items-center gap-3">
+              <a href="https://www.facebook.com/advocaciamayer" target="_blank" rel="noopener noreferrer" aria-label="Facebook Advocacia Mayer" class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl glass-pill flex items-center justify-center text-slate-300 hover:text-gold-400 hover:scale-110 transition-all border border-white/10" title="Facebook Oficial">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+              </a>
+
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram Advocacia Mayer" class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl glass-pill flex items-center justify-center text-slate-300 hover:text-gold-400 hover:scale-110 transition-all border border-white/10" title="Instagram">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Advocacia Mayer" class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl glass-pill flex items-center justify-center text-slate-300 hover:text-gold-400 hover:scale-110 transition-all border border-white/10" title="LinkedIn">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simple Clean Contact Form -->
+        <div class="lg:col-span-7 bg-white/[0.02] p-4 sm:p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-white/10 w-full">
+          <h4 class="font-serif text-base sm:text-lg font-bold text-white mb-2">Envie uma Mensagem Reservada</h4>
+          <!-- Subtítulo de Formulário Reforçado no Copywriting -->
+          <p class="text-xs text-slate-400 mb-4 sm:mb-6">Sua situação exige sigilo e estratégia rápida. Envie sua mensagem e receba orientação especializada protegida por absoluto sigilo advocatício.</p>
+
+          <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-3 sm:space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+              <div>
+                <label for="name" class="block text-xs font-medium text-slate-300 mb-1">Nome Completo</label>
+                <input type="text" id="name" required placeholder="Seu nome" class="w-full px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl text-xs sm:text-sm text-white glass-input transition duration-200">
+              </div>
+              <div>
+                <label for="phone" class="block text-xs font-medium text-slate-300 mb-1">Telefone / WhatsApp</label>
+                <input type="tel" id="phone" required placeholder="(00) 00000-0000" class="w-full px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl text-xs sm:text-sm text-white glass-input transition duration-200">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+              <div>
+                <label for="email" class="block text-xs font-medium text-slate-300 mb-1">E-mail</label>
+                <input type="email" id="email" required placeholder="seuemail@exemplo.com" class="w-full px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl text-xs sm:text-sm text-white glass-input transition duration-200">
+              </div>
+              <div>
+                <label for="area" class="block text-xs font-medium text-slate-300 mb-1">Área de Interesse</label>
+                <select id="area" class="w-full px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl text-xs sm:text-sm text-white glass-input transition duration-200 bg-[#0f1424]">
+                  <option value="criminal">Direito Criminal / Defesa Penal</option>
+                  <option value="familia">Direito de Família / Guarda / Divórcio</option>
+                  <option value="tribunais">Tribunal do Júri ou Recursos</option>
+                  <option value="outro">Outra Questão Jurídica</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="message" class="block text-xs font-medium text-slate-300 mb-1">Breve Descrição do Caso</label>
+              <textarea id="message" rows="4" required placeholder="Descreva sucintamente sua dúvida ou situação jurídica..." class="w-full px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl text-xs sm:text-sm text-white glass-input transition duration-200"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 sm:py-4 rounded-xl text-slate-950 font-bold text-xs sm:text-sm tracking-wider uppercase bg-gradient-to-r from-gold-400 to-amber-300 hover:from-amber-300 hover:to-gold-400 shadow-xl shadow-gold-500/20 transition duration-300">
+              Enviar Mensagem Confidencial
+            </button>
+            <p id="formFeedback" class="text-xs text-center text-emerald-400 font-medium hidden pt-2">
+              ✓ Redirecionando para o WhatsApp...
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 glass-nav py-8 sm:py-10 relative z-10 w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6 text-center md:text-left">
+      <div>
+        <div class="flex items-center justify-center md:justify-start gap-2">
+          <span class="font-serif text-base sm:text-lg font-bold text-white tracking-widest uppercase">Advocacia Mayer</span>
+          <span class="text-xs text-gold-400 font-medium hidden sm:inline">| 30 Anos de Excelência</span>
+        </div>
+        <p class="text-xs text-slate-400 mt-1">Direito Criminal &bull; Direito de Família</p>
+      </div>
+
+      <div class="text-[11px] sm:text-xs text-slate-400">
+        &copy; 2026 Advocacia Mayer. Todos os direitos reservados.<br class="hidden sm:inline">Em conformidade com o Código de Ética e Disciplina da OAB.
+      </div>
+      <div>
+        <a href="https://jvsato.com.br" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-gold-400 transition-colors text-xs sm:text-sm">
+          Desenvolvido por jvsato.com.br
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
