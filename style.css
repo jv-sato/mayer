@@ -1,0 +1,56 @@
+/* Custom Glassmorphism Styles & Effects */
+.glass-card {
+  background: rgba(17, 24, 44, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.glass-nav {
+  background: rgba(7, 10, 18, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-pill {
+  background: rgba(212, 175, 55, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.glass-input:focus {
+  border-color: #D4AF37;
+  background: rgba(255, 255, 255, 0.06);
+  outline: none;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+.glow-gold {
+  text-shadow: 0 0 24px rgba(212, 175, 55, 0.35);
+}
+
+/* Ambient lighting effects */
+.ambient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(110px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.45;
+}
+
+body {
+  background-image: linear-gradient(rgba(6, 9, 17, 0.85), rgba(6, 9, 17, 0.85)), url('assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
